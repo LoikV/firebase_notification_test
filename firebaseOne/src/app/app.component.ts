@@ -15,6 +15,7 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.messagingService.requestPermission();
     this.messagingService.receiveMessage();
+    this.messagingService.tokenChanges();
     this.message = this.messagingService.currentMessage;
   }
 }

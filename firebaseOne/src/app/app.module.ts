@@ -1,3 +1,5 @@
+import {AngularFireDatabaseModule} from '@angular/fire/database';
+import {AngularFireAuthModule} from '@angular/fire/auth';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -15,9 +17,10 @@ import { AngularFirestore } from '@angular/fire/firestore';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    AngularFireDatabaseModule,
+    AngularFireAuthModule,
     AngularFireMessagingModule,
-    AngularFireModule.initializeApp(environment.firebase),
-    
+    AngularFireModule.initializeApp(environment.firebase)
   ],
   providers: [AngularFirestore],
   bootstrap: [AppComponent]
