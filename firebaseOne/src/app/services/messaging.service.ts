@@ -52,9 +52,7 @@ export class MessagingService {
     });
   }
   tokenChanges() {
-    this.angularFireMessaging.tokenChanges.subscribe(r => {
-      console.log(r);
-    });
+    // this.angularFireMessaging.
   }
   private _show(payload: any): void {
     alert(payload.notification.body);
